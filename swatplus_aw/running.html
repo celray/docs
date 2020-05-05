@@ -74,15 +74,15 @@
                                 <h6 style="text-align: left;"> <u>Setting up the model </u> </h6>
                                 <p style="text-align: justify;">
                                     Once the config has been filled, it should be placed in the same directory as the
-                                    data directory (Figure 6). User can run the workflow using Command Prompt or
+                                    data directory (Figure 7). User can run the workflow using Command Prompt or
                                     PowerShell by following these
                                     steps
                                 </p>
 
                                 <img class="materialboxed"
-                                    data-caption="Figure 6: Directory where the model will be setup and how to open cmd or powershell"
+                                    data-caption="Figure 7: Directory where the model will be setup and how to open cmd or powershell"
                                     width="100%" src="../images/dir_setup.jpg">
-                                <p style="text-align: left;"><i>Figure 6: Directory where the model will be setup and
+                                <p style="text-align: left;"><i>Figure 7: Directory where the model will be setup and
                                         how to open cmd or powershell</i>
                                 </p>
 
@@ -91,21 +91,21 @@
                                         <li>Open the directory where the data directory and config are located.</li>
                                         <li>Click the address bar and type ‘cmd’ or ‘powershell’ </li>
                                         <li>Press the ENTER key to open the Command Prompt window in the current
-                                            directory (Figure 6). Note that you can open Command Prompt outside the
+                                            directory (Figure 7). Note that you can open Command Prompt outside the
                                             current directory from the start menu, but the directory needs to be changed
                                             to the location of the config using the CD command.</li>
                                         <li>Type ‘swatplus_aw’ and press Enter to start running the SWAT+ AW. The
                                             workflow will set up the model based on the settings specified in the config
-                                            (Figure 7). The model being set up will appear in the same directory as the
+                                            (Figure 8). The model being set up will appear in the same directory as the
                                             config. If you change a setting in the config, you must change the name of
                                             the project too; otherwise, the current project will be overwritten. </li>
                                     </ol>
                                 </p>
 
 
-                                <img class="materialboxed" data-caption="Figure 7: Running the SWAT+ AW" width="100%"
+                                <img class="materialboxed" data-caption="Figure 8: Running the SWAT+ AW" width="100%"
                                     src="../images/running_create.jpg">
-                                <p style="text-align: left;"><i>Figure 7: Running the SWAT+ AW</i>
+                                <p style="text-align: left;"><i>Figure 8: Running the SWAT+ AW</i>
                                 </p>
 
                                 <p style="text-align: justify;">
@@ -122,9 +122,32 @@
                                     containing the model. However, if you have the config, make sure you set the
                                     <i>Model_2_config</i> setting to True. In that case, the config used to retrieve the new
                                     config from the existing model is saved into a directory called <i>old_configs</i>. Thus
-                                    the user can use previously used configs later. Be sure to move or rename the existing data directory as it will be overwritten in
-                                    the process.
+                                    the user can use previously used configs later. Be sure to move or rename the existing data 
+                                    directory as it will be overwritten in the process.
                                 </p>
+
+                                <h6 style="text-align: left;"> <u>Running a specific step with "swatplus_api"</u> </h6>
+                                <p style="text-align: left;">
+                                    The user can run a specific step without runing the whole workflow by using the 'swatplus_api' 
+                                    command. This command should be executed in the directory where the model is setup. if the 
+                                    command is executed without any <i>argument</i> (option), it lists available options as follows
+                                </p>
+                                    <p style="margin-left: 20px; text-align: left;">
+                                        - prepare_project <br>
+                                        - delineate_watershed <br>
+                                        - create_hrus <br>
+                                        - setup_editor_project <br>
+                                        - configure_model_options <br>
+                                        - setup_management <br>
+                                        - write_files <br>
+                                        - run_swatplus <br>
+                                        - make_figures <br>
+                                        - calibrate <br>
+                                    </p>
+
+                                    <p style="text-align: left;">
+                                        To use the api, type: 'swatplus_api [option]' in command prompt or PowerShell and press 'Enter'
+                                    </p>
                                 
                         </li>
 
