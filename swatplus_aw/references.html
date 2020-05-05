@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celray.github.io</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Page Layout here -->
+    <div class="container">
+
+        <div style="width: 100%; height: auto; text-align: center;">
+            <div class="row" style="width:100%;">
+                <div class="col s0 m4 l3" style="height: 150px; padding-top: 30px;">
+
+                </div>
+                <div class="col s12 m8 l9" style="height: 150px; padding-top: 30px;">
+                    <div class="card horizontal z-depth-0" style="padding-left: 20px; height: 150px; margin-top: -30;">
+                        <div class="card-image" style="margin-top: 25px;">
+                            <img width="220px" height="110px" src="../images/swat_plus_aw.jpg">
+                        </div>
+                        <div class="card-stacked" style="text-align:left; margin-top: -30px;">
+                            <div class="card-content">
+                                <h3>SWAT+ AW</h3>
+                                <p>SWAT+ Automatic Workflow Documentation</p>
+                                <p>Version 1.0.4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col s12 m4 l3">
+
+                    <ul class="" style="text-align: left; margin-top: -10px;">
+                        <li><a href="../index.html" class="">
+                                <font size=+1> Home</font>
+                            </a></li>
+                        <br>
+                        <li><a href="introduction.html" class="">
+                                <font size=+1> SWAT+ AW</font>
+                            </a></li>
+                            <li>&emsp;&emsp;<a href="introduction.html"><font color = "gray">- Introduction and setup</font></a></li>
+                            <li>&emsp;&emsp;<a href="data.html"><font color = "gray">- Data</font></a></li>
+                            <li>&emsp;&emsp;<a href="config_file_1.html"><font color = "gray">- Config File P1</font></a></li>
+                            <li>&emsp;&emsp;<a href="config_file_2.html"><font color = "gray">- Config File P2</font></a></li>
+                            <li>&emsp;&emsp;<a href="config_file_3.html"><font color = "gray">- Config File P3</font></a></li>
+                            <li>&emsp;&emsp;<a href="config_file_4.html"><font color = "gray">- Config File P4</font></a></li>
+                            <li>&emsp;&emsp;<a href="running.html"><font color = "gray">- Running SWAT+ AW</font></a></li>
+                            <li>&emsp;&emsp;<a href="references.html"><font color = "orange">- References</font></a></li>
+                        <br>
+                        <li><a href="#" class="">
+                                <font size=+1> SWAT Data</font>
+                            </a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col s12 m8 l9" style="padding-left: 20px; margin-top: -20px;">
+                    <ul class="collapsible expandable z-depth-0" style="border: 0em;">
+                        <li class="active">
+                            <div class="collapsible-header"><i class="material-icons">build</i>References</div>
+                            <div class="collapsible-body">
+
+                                <p style="text-align: left;">
+                                    <ol>
+                                        <li>
+                                            <p style="margin-left: 20px; text-indent: -20px; text-align: left;">
+                                                Dile, Y., Srinivasan, R., & George, C. (2017). QGIS Interface for SWAT
+                                                (QSWAT), February(v 1.4), 77. https://doi.org/10.13140/RG.2.1.1060.7201
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p style="margin-left: 20px; text-indent: -20px; text-align: left;">
+                                                Marcus, E. (2015). Credibility and reproducibility. Chemistry and
+                                                Biology,
+                                                22(1), 3–4. https://doi.org/10.1016/j.chembiol.2014.12.008
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p style="margin-left: 20px; text-indent: -20px; text-align: left;">
+                                                McNutt, M. (2014). Reproducibility. Science, 343(6168), 229–229.
+                                                https://doi.org/10.1126/science.1250475
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p style="margin-left: 20px; text-indent: -20px; text-align: left;">
+                                                Vasilevsky, N. A., Brush, M. H., Paddock, H., Ponting, L., Tripathy, S. J.,
+                                                LaRocca, G. M., & Haendel, M. A. (2013). On the reproducibility of science:
+                                                unique identification of research resources in the biomedical literature.
+                                                PeerJ, 1, e148. https://doi.org/10.7717/peerj.148 
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </p>
+
+                        </li>
+
+                </div>
+                </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        var elem = document.querySelector('.collapsible.expandable');
+        var instance = M.Collapsible.init(elem, {
+            accordion: false
+        });
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems, options);
+        });
+
+    </script>
+</body>
+
+</html>
