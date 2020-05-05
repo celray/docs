@@ -92,8 +92,9 @@
                                     SWAT+ AW allows you to specify land use management options and reservoir management
                                     options. To do this fill the management sections in the config file as shown in
                                     Figure 4. To set the management for more than one land use, repeat the block with
-                                    curly brackets with different landuse name and options inside them. Refer to the SWAT+ documentation for 
-                                    more details on land use types in SWAT+
+                                    curly brackets with different landuse name and options inside them. To skip
+                                    management options, delete or comment all the blocks with the curly brackets. The
+                                    above procedure also applies to reservoir management options.
                                 </p>
 
                                 <img class="materialboxed" data-caption="Figure 4: Management sections in config.py"
@@ -102,12 +103,49 @@
 
                                 <h6 style="text-align: left;"> <u>Land use Management Options</u> </h6>
                                 <p style="text-align: justify;">
-                                    
+                                    To specify land use management options, first, set the target land use as seen in
+                                    line 58 (Figure 4). Refer to the <a href="https://swatplus.gitbook.io/docs/user/io">
+                                        SWAT+ documentation </a> for more details on land use
+                                    types in SWAT+. Line 59 (Figure 4) shows the name given to the management schedule
+                                    that will
+                                    have the details for managing the selected landuse. If the user specifies a name
+                                    that already exists in the database, SWAT+ AW will update it with the details
+                                    specified here.
+                                </p>
+
+                                <p style="text-align: justify;">
+                                    Users can add automatic schedules that are already available in SWAT+ by specifying
+                                    the name of the automatic schedule under "auto_sch1". The names of the automatic
+                                    schedules are available in the lum.dtl file that is documented in the <a
+                                        href="https://swatplus.gitbook.io/docs/user/io"> SWAT+ documentation </a>
+                                    available from
+                                    the <a href="https://swat.tamu.edu/">SWAT+ website</a>. If there are more than one
+                                    automatic schedules, they should be numbered sequentially.
+                                    Mannual schedules can be added by
+                                </p>
+
+                                <p style="text-align: justify;">
+                                    Mannual schedules can be added by adding details under "op_sch". These need to be
+                                    sequentially numbered too (Figure 4). For mannual schedules, the user will need to
+                                    provide <i>"op_typ</i> (which is the type of operation to be carried out in the
+                                    specified land use), <i>date</i> (which is the day and month when the operation is
+                                    carried out), <i>harvest_part</i> (if the operation is harvesting, what part of the
+                                    plant is harvested?) and <i>rot_year</i> (which specifies the number of years before
+                                    operation is performed again - in a cycle)
                                 </p>
 
 
+                                <h6 style="text-align: left;"> <u>Reservoir Management Options</u> </h6>
                                 <p style="text-align: justify;">
-                                    
+                                    If the user needs to set up reservoir management make sure there is a reservoir in
+                                    the model being set up. However, this needs knowledge of decision tables which are
+                                    introduced <a href="https://youtu.be/U8zSMn2HuYM?t=1461">in this video</a> and <a
+                                        href="https://www.researchgate.net/publication/325496264_Use_of_Decision_Tables_to_Simulate_Management_in_SWAT">in
+                                        this paper </a>.
+                                </p>
+
+                                <p style="text-align: justify;">
+
                                 </p>
 
                         </li>
