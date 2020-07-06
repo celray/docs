@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celray.github.io</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Page Layout here -->
+    <div class="container">
+
+        <div style="width: 100%; height: auto; text-align: center;">
+            <div class="row" style="width:100%;">
+                <div class="col s0 m4 l3" style="height: 150px; padding-top: 30px;">
+
+                </div>
+                <div class="col s12 m8 l9" style="height: 150px; padding-top: 30px;">
+                    <div class="card horizontal z-depth-0" style="padding-left: 20px; height: 150px; margin-top: -30;">
+                        <div class="card-image" style="margin-top: 25px;">
+                            <img width="220px" height="110px" src="../images/swatplus_toobox/swatplus_toolbox.jpg">
+                        </div>
+                        <div class="card-stacked" style="text-align:left; margin-top: -30px;">
+                            <div class="card-content">
+                                <h3>SWAT+ Toolbox</h3>
+                                <p>SWAT+ Automatic Workflow Documentation</p>
+                                <p>Version 0.0.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col s12 m4 l3">
+
+                    <ul class="" style="text-align: left; margin-top: -10px;">
+                        <li><a href="../index.html" class="">
+                            <font size=+1> Home</font>
+                        </a></li>
+                        <br>
+
+                        <li><a href="#" class="">
+                            <font size=+1> SWAT+ Toolbox</font>
+                        </a></li>
+                        <li>&emsp;&emsp;<a href="introduction.html">
+                            <font color="orange">- Introduction and setup</font>
+                        </a></li>
+                        <li>&emsp;&emsp;<a href="projects.html">
+                                <font color="gray">- Creating & Opening a Project</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="run.html">
+                                <font color="gray">- Running a model</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="parameters.html">
+                                <font color="gray">- Adding Parameters</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="observations.html">
+                                <font color="gray">- Adding Observations</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="sensitivity.html">
+                                <font color="gray">- Sensitivity Analysis</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="calibration.html">
+                                <font color="gray">- Calibration</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="model_checks.html">
+                            <font color="gray">- Model Checks</font>
+                        </a></li>
+                        <br>
+
+              
+                        <li><a href="../swatplus_aw/introduction.html" class="">
+                                <font size=+1> SWAT+ AW</font>
+                            </a></li>
+                        <br>
+  
+
+                    </ul>
+
+                </div>
+
+                <div class="col s12 m8 l9" style="padding-left: 20px; margin-top: -20px;">
+                    <ul class="collapsible expandable z-depth-0" style="border: 0em;">
+                        <li class="active">
+                            <div class="collapsible-header"><i
+                                    class="material-icons">format_align_center</i>Introduction
+                            </div>
+                            <div class="collapsible-body">
+                                <p style="text-align: justify;">
+                                    SWAT+ is relatively new and there are not so many tools to carry out model analysis and calibration.
+                                    SWAT+ Toobox is a free tool that allows the user to perform. analyses, calibration and more.<br> <br>
+                                    The software has been writen in C# and is currently still in testing. Users interested to test it can 
+                                    try it by downloading an installer <a href="">here</a>.
+                                </p>
+
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="collapsible-header"><i class="material-icons">code</i>Setting up software</div>
+                            <div class="collapsible-body">
+                                <p style="text-align: justify;">
+                                    After downloading the installer, install normally using the default settings. Note that you will have to uninstall any previous versions before installing a new version.
+                                    <br/>
+                                    <img class="materialboxed"
+                                    data-caption="Installationg of SWAT+ Toolbox" width="100%"
+                                    src="../images/swatplus_toobox/1.installation.jpg">
+                                    <p style="text-align: left;"><i>Figure 1: Installation of the SWAT+ Toolbox Software</i></p>
+
+                                    <p style="text-align: justify;">
+                                    Once the last window apears, click Finish to Exit.
+                                    </p>
+                                </p>
+                            </div>
+                        </li>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        var elem = document.querySelector('.collapsible.expandable');
+        var instance = M.Collapsible.init(elem, {
+            accordion: false
+        });
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems, options);
+        });
+
+    </script>
+</body>
+
+</html>
