@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celray.github.io</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Page Layout here -->
+    <div class="container">
+
+        <div style="width: 100%; height: auto; text-align: center;">
+            <div class="row" style="width:100%;">
+                <div class="col s0 m4 l3" style="height: 150px; padding-top: 30px;">
+
+                </div>
+                <div class="col s12 m8 l9" style="height: 150px; padding-top: 30px;">
+                    <div class="card horizontal z-depth-0" style="padding-left: 20px; height: 150px; margin-top: -30;">
+                        <div class="card-image" style="margin-top: 25px;">
+                            <img width="220px" height="110px" src="../images/swat_plus_aw.jpg">
+                        </div>
+                        <div class="card-stacked" style="text-align:left; margin-top: -30px;">
+                            <div class="card-content">
+                                <h3>SWAT+ AW</h3>
+                                <p>SWAT+ Automatic Workflow Documentation</p>
+                                <p>Version 1.0.4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col s12 m4 l3">
+
+                    <ul class="" style="text-align: left; margin-top: -10px;">
+                        <li><a href="../../index.html" class="">
+                                <font size=+1> Home</font>
+                            </a></li>
+                        <br>
+                        
+                        <li><a href="introduction.html" class="">
+                                <font size=+1> SWAT+ AW</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="introduction.html">
+                                <font color="orange">- Introduction and setup</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="data.html">
+                                <font color="gray">- Data</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="config_file_1.html">
+                                <font color="gray">- Config File P1</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="config_file_2.html">
+                                <font color="gray">- Config File P2</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="config_file_3.html">
+                                <font color="gray">- Config File P3</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="config_file_4.html">
+                                <font color="gray">- Config File P4</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="running.html">
+                                <font color="gray">- Running SWAT+ AW</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="references.html">
+                                <font color="gray">- References</font>
+                            </a></li>
+                        <br>
+
+                    </ul>
+
+                </div>
+
+                <div class="col s12 m8 l9" style="padding-left: 20px; margin-top: -20px;">
+                    <ul class="collapsible expandable z-depth-0" style="border: 0em;">
+                        <li class="active">
+                            <div class="collapsible-header"><i
+                                    class="material-icons">format_align_center</i>Introduction
+                            </div>
+                            <div class="collapsible-body">
+                                <p style="text-align: justify;">
+                                    SWAT is a time-continuous, semi-distributed hydrological model that has been widely
+                                    used
+                                    in various hydrological studies across the world. SWAT+ is a restructured and
+                                    improved
+                                    version of the SWAT model. QSWAT+ and SWAT+ Editor are currently the only interfaces
+                                    for
+                                    setting up SWAT+ models. <br> <br>
+                                    Reproducibility of science has come under scrutiny recently (Marcus, 2015) as it has
+                                    been discovered that a large proportion of science is not reproducible (McNutt,
+                                    2014;
+                                    Vasilevsky et al., 2013). In hydrology, modelling work is often not reproducible
+                                    because
+                                    of missing details on model setup. This software uses a config, which is a settings
+                                    file, to build and run SWAT+ models. Users can share the config along with their
+                                    published works to promote transparency as all model options are well documented in
+                                    the
+                                    file. Sharing the config and data also allows others to reproduce the models from
+                                    scratch.
+
+                                </p>
+
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="collapsible-header"><i class="material-icons">code</i>Setting up software</div>
+                            <div class="collapsible-body">
+                                <p style="text-align: justify;">
+                                    Download and install QGIS 3.10 – 64-bit version from QGIS website (<a
+                                        href="https://qgis.org/downloads/QGIS-OSGeo4W-3.10.3-1-Setup-x86_64.exe">Download
+                                        QGIS 3.10.3</a>). Download and install SWAT+ Automatic Workflow (SWAT+ AW) using
+                                    default settings. The installer can be found on the repository (<a
+                                        href="https://github.com/celray/swatplus-automatic-workflow/releases">SWAT+ AW
+                                        Releases</a>). This installer will install
+                                    all the dependencies and set environmental variables. It is recommended that you use
+                                    the installer but you can also setup all the dependencies and environmental
+                                    variables manually. QGIS python does not ship with <a
+                                        href="https://pypi.org/project/pandas/">Pandas</a>, <a
+                                        href="https://pypi.org/project/geopandas/">geopandas</a> and <a
+                                        href="https://pypi.org/project/peewee/">peewee (with playhouse)</a>
+                                    python packages but these python packages are used by the workflow. If you do not
+                                    want to use the installer from the repository, you will need to install <a
+                                        href="https://pypi.org/project/geopandas/">geopandas</a> (which will install
+                                    pandas) and <a href="https://pypi.org/project/peewee/">peewee</a> python packages 
+                                    for the Python that ships with QGIS 3.10 (C:\Program Files\QGIS 3.10\apps\Python37). You will also need to install TauDEM5
+                                    binaries to C:\SWAT\SWATPlus\TauDEM5Bin (<a
+                                        href="http://hydrology.usu.edu/taudem/taudem5/downloads.html">View this
+                                        page</a>). The workflow should be extracted to the Workflow Directory
+                                    (C:\SWAT\SWATPlus\Workflow). The Workflow Directory should also be appended to the
+                                    “path” environmental variable. It should also be added to the environmental variable
+                                    “swatplus_wf_dir”.
+                                </p>
+                            </div>
+                        </li>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        var elem = document.querySelector('.collapsible.expandable');
+        var instance = M.Collapsible.init(elem, {
+            accordion: false
+        });
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems, options);
+        });
+
+    </script>
+</body>
+
+</html>

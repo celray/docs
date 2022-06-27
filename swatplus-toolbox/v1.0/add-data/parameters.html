@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>docs</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-With-Button.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/untitled.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container"><img class="img-fluid" width="40px" height="auto" loading="lazy" src="../assets/img/spt_logo.png" style="padding-right: 10px;"><a class="navbar-brand d-flex align-items-center" href="index.html"><span>Home</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Getting Started</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../getting-started/requirements.html">Requirements</a>
+                            <a class="dropdown-item" href="../getting-started/Installation.html">Installation</a>
+                            <a class="dropdown-item" href="../getting-started/qswatplus-integration.html">QSWAT+ Integration</a>
+                            <a class="dropdown-item" href="#">Support</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Projects</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../projects/creating-a-project.html">Creating a project</a>
+                            <a class="dropdown-item" href="../projects/opening-a-project.html">Opening an Existing Project</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Add Data</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../add-data/run-settings.html">Run Settings</a>
+                            <a class="dropdown-item" href="../add-data/parameters.html">Parameters</a>
+                            <a class="dropdown-item" href="../add-data/observations.html">Observations</a>
+                            <a class="dropdown-item" href="#">Management</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Run</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../run/model.html">Model</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../run/sensitivity.html">Sensitivity Analysis</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../run/manual-calibration.html">Manual Calibration</a>
+                            <a class="dropdown-item" href="../run/automatic-calibration.html">Automatic Calibration</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../run/check.html">Model Checks</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">More</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-main">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html"><span>Home</span></a></li>
+            <li class="breadcrumb-item"><a href="#"><span>Add Data</span></a></li>
+            <li class="breadcrumb-item"><a href="../getting-started/requirements.html"><span>Parameters</span></a></li>
+        </ol>
+        <h1 class="text-center">Adding Parameters<br></h1>
+        <p>In the parameters section, you can add parameters that you want to use in sensitivity analysis or calibration.&nbsp;To add a parameter, select the parameter group in the 'Parameter Group' drop-down menu to filter out&nbsp;parameters based on their group or select 'All' to display all available parameters in SWAT+. Select the&nbsp;parameter in the 'Parameter Name' drop-down menu and chose the 'Change Type'.<br></p>
+        <p>There are three 'Change Type' options.<br></p>
+        <ul>
+            <li>Percentage : increases/ decreases the current value by a specified percent.<br></li>
+            <li>Relative Change: increases/decreases the current value by a specified value. For example, if the relative value&nbsp;of -0.3 is applied to an esco value of 0.95 the new esco parameter will be 0.65&nbsp;<br></li>
+            <li>Replace: the specified value takes the place of the old parameter value. Some parameters should not be<br>changed by this method if the parameter applies to all objects in the model, For example, if you replace all cn2<br>values by 30, you lose the spatial variability in curve numbers derived from vegetative cover and give all land<br>uses essentially the same characteristics in generating surface runoff.<br></li>
+        </ul>
+        <p>Note that you can see properties of the parameter being added in the Parameter details panel and the&nbsp;Parameter Information panel (Fig. 7). The parameter details panel contains information on the options you&nbsp;have chosen while the information panel gives you partial documentation on the parameter you are adding. You can also set a parameter to apply only to selected objects (e.g. have cn2 apply only to HRUs 23 –&nbsp;29) by using the 'parameter applies to' switch (Note: add all objects before adding the parameter to the&nbsp;Parameter Table). You can add the parameter to the Parameter Table by clicking the blue plus button on the&nbsp;right (Fig. 7).<br><br></p>
+        <picture class="text-center" style="text-align: center; width: 100%"><img src="../assets/img/parameter-details.png" width="100%" style="text-align: center;margin-left: 0px;"></picture>
+        <p style="margin-left: 32px;font-style: italic;">Fig. 7.&nbsp;Details of the Parameters Page.<br></p>
+        <p style="margin-left: 32px;">the map is only available if you have the TxtInOut in the initial project structure. If you need to check parameter details, select the parameter you want from the Parameter Table.<br></p>
+    </div>
+    <footer class="text-center">
+        <div class="container text-center text-muted py-4 py-lg-5">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a class="link-secondary" href="https://celray.chawanda.com">Web</a></li>
+                <li class="list-inline-item me-4"><a class="link-secondary" href="mailto:celray@chawanda.com">Email</a></li>
+            </ul>
+            <ul class="list-inline"></ul>
+            <p class="mb-0">Copyright © 2022 Celray James</p>
+        </div>
+    </footer>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

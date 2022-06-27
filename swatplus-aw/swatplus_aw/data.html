@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celray.github.io</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Page Layout here -->
+    <div class="container">
+
+        <div style="width: 100%; height: auto; text-align: center;">
+            <div class="row" style="width:100%;">
+                <div class="col s0 m4 l3" style="height: 150px; padding-top: 30px;">
+
+                </div>
+                <div class="col s12 m8 l9" style="height: 150px; padding-top: 30px;">
+                    <div class="card horizontal z-depth-0" style="padding-left: 20px; height: 150px; margin-top: -30;">
+                        <div class="card-image" style="margin-top: 25px;">
+                            <img width="220px" height="110px" src="../images/swat_plus_aw.jpg">
+                        </div>
+                        <div class="card-stacked" style="text-align:left; margin-top: -30px;">
+                            <div class="card-content">
+                                <h3>SWAT+ AW</h3>
+                                <p>SWAT+ Automatic Workflow Documentation</p>
+                                <p>Version 1.0.4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col s12 m4 l3">
+
+                    <ul class="" style="text-align: left; margin-top: -10px;">
+                        <li><a href="../../index.html" class="">
+                                <font size=+1> Home</font>
+                            </a></li>
+                        <br>
+                        
+                        <li><a href="introduction.html" class="">
+                                <font size=+1> SWAT+ AW</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="introduction.html">
+                                <font color="gray">- Introduction and setup</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="data.html">
+                                <font color="orange">- Data</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="config_file_1.html">
+                                <font color="gray">- Config File P1</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="config_file_2.html">
+                                <font color="gray">- Config File P2</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="config_file_3.html">
+                                <font color="gray">- Config File P3</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="config_file_4.html">
+                                <font color="gray">- Config File P4</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="running.html">
+                                <font color="gray">- Running SWAT+ AW</font>
+                            </a></li>
+                        <li>&emsp;&emsp;<a href="references.html">
+                                <font color="gray">- References</font>
+                            </a></li>
+                        <br>
+
+                    </ul>
+
+                </div>
+
+                <div class="col s12 m8 l9" style="padding-left: 20px; margin-top: -20px;">
+                    <ul class="collapsible expandable z-depth-0" style="border: 0em;">
+                        <li class="active">
+                            <div class="collapsible-header"><i class="material-icons">data_usage</i>Data</div>
+                            <div class="collapsible-body">
+                                <p style="text-align: justify;">
+                                    The data requirements for the SWAT+ AW are the same as data requirements for QSWAT+
+                                    and SWAT+ Editor. Thus, users can use the same data formats as the GUI counterparts.
+                                    For more information on SWAT+ data formats refer to QSWAT guide (Dile, Srinivasan, &
+                                    George, 2017).
+                                </p>
+
+                                <img class="materialboxed"
+                                    data-caption="Directory structure of data prepared for the SWAT+ AW" width="100%"
+                                    src="../images/data_structure.jpg">
+
+                                <p style="text-align: left;"><i>Figure 1: Directory structure of data prepared for the
+                                        SWAT+ AW</i></p>
+                                <p style="text-align: justify;">
+                                    Rasters files. i.e. Digital elevation model (DEM), land use map and soil map should
+                                    be placed in the <i>rasters</i> directory within the <i>Data</i> folder.
+
+                                    All shapefiles. i.e. outlet shapefile and river shapefile for ‘burn in’ should be
+                                    placed in <i>shapes</i> directory.
+
+                                    Files that have information that needs to be imported into project databases later
+                                    should be placed in the <i>tables</i> directory. These files include land use and
+                                    soil lookup tables, and soil properties table.
+
+                                    All weather files should be placed in the <i>weather</i> directory.
+
+                                    If you want to include calibrated parameters that should be applied to the model
+                                    after set up, you should include the parameters file in the <i>calibration</i>
+                                    directory.
+                                    Remember to include the name of the calibration file in the config.
+
+                                </p>
+
+                        </li>
+
+
+                </div>
+                </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        var elem = document.querySelector('.collapsible.expandable');
+        var instance = M.Collapsible.init(elem, {
+            accordion: false
+        });
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems, options);
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>docs</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-With-Button.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/untitled.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container"><img class="img-fluid" width="40px" height="auto" loading="lazy" src="../assets/img/spt_logo.png" style="padding-right: 10px;"><a class="navbar-brand d-flex align-items-center" href="index.html"><span>Home</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Getting Started</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../getting-started/requirements.html">Requirements</a>
+                            <a class="dropdown-item" href="../getting-started/Installation.html">Installation</a>
+                            <a class="dropdown-item" href="../getting-started/qswatplus-integration.html">QSWAT+ Integration</a>
+                            <a class="dropdown-item" href="#">Support</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Projects</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../projects/creating-a-project.html">Creating a project</a>
+                            <a class="dropdown-item" href="../projects/opening-a-project.html">Opening an Existing Project</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Add Data</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../add-data/run-settings.html">Run Settings</a>
+                            <a class="dropdown-item" href="../add-data/parameters.html">Parameters</a>
+                            <a class="dropdown-item" href="../add-data/observations.html">Observations</a>
+                            <a class="dropdown-item" href="#">Management</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Run</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../run/model.html">Model</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../run/sensitivity.html">Sensitivity Analysis</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../run/manual-calibration.html">Manual Calibration</a>
+                            <a class="dropdown-item" href="../run/automatic-calibration.html">Automatic Calibration</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../run/check.html">Model Checks</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">More</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-main">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html"><span>Home</span></a></li>
+            <li class="breadcrumb-item"><a href="#"><span>Add Data</span></a></li>
+            <li class="breadcrumb-item"><a href="../getting-started/requirements.html"><span>Run Settings</span></a></li>
+        </ol>
+        <h1 class="text-center">Choose Run Settings</h1>
+        <p>Once you have set up a SWAT+ Toolbox project, you will need to chose SWAT+ run settings. These are the&nbsp;settings SWAT+ Toolbox will use for sensitivity analysis, manual calibration and automatic calibration. You can&nbsp;chose the 'run-settings' in the 'Run Model' section (Fig. 4)<br></p>
+        <ul></ul>
+        <picture class="text-center" style="text-align: center; width: 100%"><img src="../assets/img/run-settings.png" width="80%" style="text-align: center;margin-left: 29px;"></picture>
+        <p style="margin-left: 32px;font-style: italic;">Fig. 4.&nbsp;Run Model Section<br></p>
+        <p style="margin-left: 32px;">This section allows you to set simulation period, routing method, PET method, print settings and allows you&nbsp;to run SWAT+ and monitor the progress of the run. You can also&nbsp;open your TxtInOut Directory in one click by clicking the&nbsp;<img src="../assets/img/folder-icon.png" style="width: 29px;height: auto;">&nbsp;icon<br><br></p>
+        <h4>a) Simulation Period</h4>
+        <p style="margin-left: 32px;">By default, SWAT+ will inherit the period for the model run&nbsp;from the time.sim file within the TxtInOut directory. However,&nbsp;you can type in the start and end dates in the 'Start Date' and&nbsp;'End Date' boxes respectively. If you are not sure about date&nbsp;formats, use the date picker by clicking the icon at the right of&nbsp;each box (Fig. 5). The warm-up period can be set by entering&nbsp;the number of warm up years in the Warm-up period box.<br><br></p>
+        <picture class="text-center" style="text-align: center; width: 100%"><img src="../assets/img/simulation-period.png" width="80%" style="text-align: center;margin-left: 29px;"></picture>
+        <p style="font-style: italic;font-size: 13px;text-align: left;margin-left: 49px;">Fig 5.&nbsp;&nbsp;Date picker for selecting simulation&nbsp;period<br><br></p>
+        <h4>b)&nbsp;Routing Methods and PET Methods<br></h4>
+        <p style="margin-left: 32px;">SWAT+ Toolbox allows you to chose between Variable Storage and Muskingum Routing methods. It also&nbsp;allows you to choose one of Penman-Monteith, Priestly and Taylor, Hargreaves PET Estimation Methods&nbsp;and an option to Read PET values from a file.<br></p>
+        <h4>c)&nbsp;Print Settings<br></h4>
+        <p style="margin-left: 32px;">You can choose what results you want to have printed by checking corresponding checkboxes for print&nbsp;object and timestep. Note that you can expand or collapse the print objects' categories by clicking on up&nbsp;or down arrows at the right of each category heading (Fig. 6)<br></p>
+        <picture class="text-center" style="text-align: center; width: 100%"><img src="../assets/img/home-section-details.png" width="80%" style="text-align: center;margin-left: 29px;"></picture>
+        <p style="font-style: italic;font-size: 13px;text-align: left;margin-left: 49px;">Fig 6.&nbsp;Home section details<br><br></p>
+        <p style="margin-left: 32px;">At this point, you are ready to run the model within SWAT+ Toolbox. For more details, click <a href="#">here</a><br></p>
+    </div>
+    <footer class="text-center">
+        <div class="container text-center text-muted py-4 py-lg-5">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a class="link-secondary" href="https://celray.chawanda.com">Web</a></li>
+                <li class="list-inline-item me-4"><a class="link-secondary" href="mailto:celray@chawanda.com">Email</a></li>
+            </ul>
+            <ul class="list-inline"></ul>
+            <p class="mb-0">Copyright © 2022 Celray James</p>
+        </div>
+    </footer>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

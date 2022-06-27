@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>docs</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-With-Button.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/untitled.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container"><img class="img-fluid" width="40px" height="auto" loading="lazy" src="../assets/img/spt_logo.png" style="padding-right: 10px;"><a class="navbar-brand d-flex align-items-center" href="index.html"><span>Home</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Getting Started</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../getting-started/requirements.html">Requirements</a>
+                            <a class="dropdown-item" href="../getting-started/Installation.html">Installation</a>
+                            <a class="dropdown-item" href="../getting-started/qswatplus-integration.html">QSWAT+ Integration</a>
+                            <a class="dropdown-item" href="#">Support</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Projects</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../projects/creating-a-project.html">Creating a project</a>
+                            <a class="dropdown-item" href="../projects/opening-a-project.html">Opening an Existing Project</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Add Data</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../add-data/run-settings.html">Run Settings</a>
+                            <a class="dropdown-item" href="../add-data/parameters.html">Parameters</a>
+                            <a class="dropdown-item" href="../add-data/observations.html">Observations</a>
+                            <a class="dropdown-item" href="#">Management</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Run</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../run/model.html">Model</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../run/sensitivity.html">Sensitivity Analysis</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../run/manual-calibration.html">Manual Calibration</a>
+                            <a class="dropdown-item" href="../run/automatic-calibration.html">Automatic Calibration</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../run/check.html">Model Checks</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">More</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-main">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html"><span>Home</span></a></li>
+            <li class="breadcrumb-item"><a href="#"><span>Add Data</span></a></li>
+            <li class="breadcrumb-item"><a href="../getting-started/requirements.html"><span>Observations</span></a></li>
+        </ol>
+        <h1 class="text-center">Adding Observations<br></h1>
+        <p>Observations you want to use with sensitivity analysis can be added in the 'Observations Section'<br></p>
+        <p>To add an observation, Select object type. This can a Channel, LSU, HRU or All Basin. Thus, you should select&nbsp;the type of object for which you have observations. Enter number of the object in 'Object Number' box. Browse&nbsp;and select the observation file by clicking the field where it says "Click to select an observation file".<br></p>
+        <picture class="text-center" style="text-align: center; width: 100%"><img src="../assets/img/details-observations-section.png" width="100%" style="text-align: center;margin-left: 0px;"></picture>
+        <p style="margin-left: 0px;font-style: italic;">Fig. 8. Details of the Observations Section<br></p>
+        <p>The observation files should be in CSV format with two columns – date (dd/mm/yyyy) and value. The first row&nbsp;is not read and can be used as the row for headings. If you have missing data, use -99 in the place where you&nbsp;have missing data (any negative number should work). Select the timestep that your observations have. And&nbsp;select what variable the observations have.<br></p>
+        <p>As an example, Figure 13 presents what it would be like if you have daily flow observations for channel 206.&nbsp;Note that you can open the map to be assisted in choosing channel or LSU numbers by selecting the point on&nbsp;the map to obtain details. However, this only works if your TxtInOut is still in the initial project structure.&nbsp;When an observation is added, a quick plot is displayed in the Observation Chart Panel while more information&nbsp;is shown in the Observation Details Panel, including basic statistics. A point is also marked on the map to show&nbsp;where channel observations are.<br></p>
+        <p>You can cycle through details of added observations by selecting the corresponding observations in the&nbsp;Observations Table.<br></p>
+        <p style="margin-left: 0px;font-style: italic;"><span style="font-style: normal !important;">Note: You cannot add observation for the same object and same timestep and same variable twice.</span><br></p>
+    </div>
+    <footer class="text-center">
+        <div class="container text-center text-muted py-4 py-lg-5">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><a class="link-secondary" href="https://celray.chawanda.com">Web</a></li>
+                <li class="list-inline-item me-4"><a class="link-secondary" href="mailto:celray@chawanda.com">Email</a></li>
+            </ul>
+            <ul class="list-inline"></ul>
+            <p class="mb-0">Copyright © 2022 Celray James</p>
+        </div>
+    </footer>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
