@@ -1,0 +1,48 @@
+site_name: SWAT+ Toolbox
+
+nav:
+  - Home: index.md
+  # - Setting Up: setup.md
+  # - Collaborating: collaborating.md
+  # - Managing a Repo: managing.md
+
+theme:
+  name: material
+  palette:
+    scheme: default
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes 
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+
+  # logo: assets/logo.png
+  # favicon: images/favicon.png
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - tags
+
+search:
+  boost: 2
+
+extra:
+  version:
+    provider: mike
+    
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://fosstodon.org/@squidfunk
+
+copyright: Copyright &copy; 2024 Celray James CHAWANDA
