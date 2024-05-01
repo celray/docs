@@ -38,11 +38,12 @@ search:
   boost: 2
 
 extra:
+  generator: false
   version:
     provider: mike
     
   social:
-    - icon: fontawesome/brands/mastodon 
-      link: https://fosstodon.org/@squidfunk
+    - icon: fontawesome/brands/github 
+      link: https://celray.chawanda.com
 
 copyright: Copyright &copy; 2024 Celray James CHAWANDA
